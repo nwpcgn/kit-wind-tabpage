@@ -2,12 +2,6 @@
 	import { _page, _loading } from '../data'
 	import Panel from './Panel.svelte'
 	import { loader } from './loader'
-	export let navData = [
-		{ path: '/', name: 'Start' },
-		{ path: '/daten', name: 'Archiv' },
-		{ path: '/settings', name: 'Settings' },
-		{ path: '/details', name: 'Details', hidden: true }
-	]
 	// const setPage = (index = 0, delay = 300) => {
 	// 	_loading.set(true)
 	// 	sleep(delay)
@@ -47,14 +41,15 @@
 
 <footer>
 	<ul>
-		{#each navData as { name, path, hidden }, i}
-			{#if !hidden}
-				<li>
-					<button data-id={i} on:click={handleClick} class:active={$_page == i}
-						>{name}</button>
-				</li>
-			{/if}
-		{/each}
+		<li>
+			<button class="block" data-id={0} on:click={handleClick} class:active={$_page == 0}>Home</button>
+		</li>
+		<li>
+			<button class="block" data-id={1} on:click={handleClick} class:active={$_page == 1 || $_page == 3}>Archiv</button>
+		</li>
+		<li>
+			<button class="block" data-id={2} on:click={handleClick} class:active={$_page == 2}>Settings</button>
+		</li>
 	</ul>
 </footer>
 
@@ -96,13 +91,13 @@
 		width: 100%;
 	}
 	button {
-		display: flex;
-		width: 100%;
+		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		--tw-divide-opacity: 1;
 		border-color: rgba(209, 213, 219, var(--tw-divide-opacity));
 		border-width: 3px 0 0 0;
+		color: var(--app-color);
 		font-size: 1.125rem;
 		line-height: 1.75rem;
 		transition-property: background-color, border-color, color, fill, stroke;
@@ -112,6 +107,9 @@
 		padding-left: 0.5rem;
 		padding-right: 0.5rem;
 		cursor: pointer;
+	}
+	button.block {
+		width: 100%;
 	}
 
 	button.active {

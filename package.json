@@ -1,7 +1,7 @@
 {
-  "name": "kit-wind-tabpage",
-  "version": "1.0.0",
-  "scripts": {
+	"name": "kit-wind-tabpage",
+	"version": "1.0.0",
+	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
 		"preview": "vite preview",
@@ -47,15 +47,15 @@
 	"dependencies": {
 		"@fortawesome/free-solid-svg-icons": "^6.3.0"
 	},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nwpcgn/kit-wind-tabpage.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nwpcgn/kit-wind-tabpage/issues"
-  },
-  "homepage": "https://github.com/nwpcgn/kit-wind-tabpage#readme"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nwpcgn/kit-wind-tabpage.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/nwpcgn/kit-wind-tabpage/issues"
+	},
+	"homepage": "https://github.com/nwpcgn/kit-wind-tabpage#readme"
 }

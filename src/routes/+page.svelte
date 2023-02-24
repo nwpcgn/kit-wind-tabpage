@@ -2,14 +2,14 @@
 	// import Fa from 'svelte-fa/src/fa.svelte'
 	// import { faCaretLeft, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 	import {
+		SettingsPage,
 		TabPage,
 		TabBar,
 		MovieList,
 		MovieDetails,
+		MovieInfo,
 		BackBtn,
 		SettingsBtn,
-		Button,
-		HeroPage,
 		_page,
 		_loading,
 		sleep
@@ -35,15 +35,7 @@
 				<SettingsBtn on:clicked={() => setPage(2, 100)} />
 			</svelte:fragment>
 		</TabBar>
-		<HeroPage>
-			<div class="p-8 text-center nwp">
-				<h2 class="mb-3">Carmen Rivera Collection</h2>
-				<p>
-					<Button blue on:click={(e) => setPage(1, 100)}>Movies</Button>
-					<Button on:click={() => setPage(2, 100)}>Settings</Button>
-				</p>
-			</div>
-		</HeroPage>
+		<MovieInfo {setPage} />
 	</svelte:fragment>
 	<svelte:fragment slot="p2">
 		<TabBar label="Movies">
@@ -60,9 +52,7 @@
 				<BackBtn on:clicked={() => setPage(0, 50)} />
 			</svelte:fragment>
 		</TabBar>
-		<div class="p-8 nwp">
-			<h2>Settings</h2>
-		</div>
+		<SettingsPage {setPage} />
 	</svelte:fragment>
 	<svelte:fragment slot="p4">
 		<TabBar label="Details">
