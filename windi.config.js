@@ -104,6 +104,20 @@ export default defineConfig({
 						color: '#4a4a4a'
 					}
 				},
+				'.btn-gray': {
+					backgroundColor: '#e2e8f0',
+					color: '#475569',
+					'&:hover': {
+						backgroundColor: '#cbd5e1'
+					},
+					'&:active': {
+						backgroundColor: '#94A3B8'
+					},
+					'&.active': {
+						backgroundColor: '#94A3B8',
+						color: '#fff'
+					}
+				},
 				'.btn-red': {
 					backgroundColor: '#e3342f',
 					color: '#fff',

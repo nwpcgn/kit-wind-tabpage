@@ -36,3 +36,23 @@
 		@apply text-white bg-red-800;
 	}
 </style>
+
+
+<!--
+
+'.btn-gray': {
+backgroundColor: '#f1f5f9',
+color: '#475569',
+'&:hover': {
+	backgroundColor: '#e2e8f0'
+},
+'&:active': {
+	backgroundColor: '#cbd5e1'
+},
+'&.active': {
+	backgroundColor: '#cbd5e1',
+	color: '#334155'
+}
+},
+	
+-->

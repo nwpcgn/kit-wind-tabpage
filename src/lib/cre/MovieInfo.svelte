@@ -15,6 +15,7 @@
 		}
 	}
 	const data = {
+		name: "Carmen Rivera",
 		header: 'Carmen Rivera - Fetischkönigin und Domina über Lust und Schmerz!',
 		body: 'Eine außergewöhnliche Frau mit anspruchsvollem Charakter und strengem Blick! Baronessa di Rivera hat alles zusammen: Charme, Phantasie und Dominanz. Sie wird von dir immer hingebungsvolle Unterwerfung, volle Aufmerksamkeit und Respekt für ihre Befehle verlangen!',
 		sub: 'EXTREME STRAP-ONS, BRUTAL FISTING, HARDCORE HUMILIATION & TOTAL DOMINATION',
@@ -24,10 +25,6 @@
 	let dialog
 	const show = () => {
 		dialog.showModal()
-	}
-
-	const closeDialog = () => {
-		dialog.close()
 	}
 </script>
 
@@ -52,18 +49,26 @@
 	</div>
 </HeroPage>
 
-<dialog bind:this={dialog}>
-	<h2 class="text-xl">Infos</h2>
-	<div class="text-left text-sm">
-		<span>{data.body}</span>
+<dialog class="p-0 rounded" bind:this={dialog}>
+	<header class="px-4 py-2 bg-gray-200 rounded-t truncate">
+		<span class="text-xl">About {data.name ? data.name : ''}</span>
+	</header>
+
+	<div class="px-4 py-3 text-left">
+		<p class="text-gray-700 text-lg">
+			<span>{data.body}</span>
+		</p>
 	</div>
-	<form method="dialog">
-		<Button>Close</Button>
+	<form
+		class="px-4 py-2 border-t text-right bg-gray-50 rounded-b"
+		method="dialog">
+		<button class="btn btn-gray">Close</button>
 	</form>
 </dialog>
 
 <style>
 	dialog {
+		width: 100%;
 		max-width: 480px;
 	}
 	dialog::backdrop {
