@@ -3,6 +3,12 @@ import { writable } from 'svelte/store'
 export let _page = writable(0)
 export const _loading = writable(false)
 export const _params = writable(null)
+export const _settings = writable({
+    op1: false,
+    op2: false,
+    op3: false,
+    op4: false
+});
 export const sleep = (milliseconds = 1000) =>
 	new Promise((resolve) => setTimeout(resolve, milliseconds))
 
