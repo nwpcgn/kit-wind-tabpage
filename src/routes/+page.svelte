@@ -30,7 +30,7 @@
 
 <TabPage {setPage}>
 	<svelte:fragment slot="p1">
-		<TabBar label="blackburn-archiv">
+		<TabBar label="Carmen Rivera Collection">
 			<svelte:fragment slot="end">
 				<SettingsBtn on:clicked={() => setPage(2, 100)} />
 			</svelte:fragment>
@@ -38,12 +38,11 @@
 		<MovieInfo {setPage} />
 	</svelte:fragment>
 	<svelte:fragment slot="p2">
-		<TabBar label="Movies">
+		<TabBar label="Movie List">
 			<svelte:fragment slot="start">
 				<BackBtn on:clicked={() => setPage(0, 50)} />
 			</svelte:fragment>
 		</TabBar>
-
 		<MovieList {setPage} />
 	</svelte:fragment>
 	<svelte:fragment slot="p3">
@@ -55,7 +54,7 @@
 		<SettingsPage {setPage} />
 	</svelte:fragment>
 	<svelte:fragment slot="p4">
-		<TabBar label="Details">
+		<TabBar label="Movie Details">
 			<svelte:fragment slot="start">
 				<BackBtn on:clicked={() => setPage(1, 50)} />
 			</svelte:fragment>

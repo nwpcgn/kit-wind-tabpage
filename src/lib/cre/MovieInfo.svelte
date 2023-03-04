@@ -19,7 +19,7 @@
 		header: 'Carmen Rivera - Fetischkönigin und Domina über Lust und Schmerz!',
 		body: 'Eine außergewöhnliche Frau mit anspruchsvollem Charakter und strengem Blick! Baronessa di Rivera hat alles zusammen: Charme, Phantasie und Dominanz. Sie wird von dir immer hingebungsvolle Unterwerfung, volle Aufmerksamkeit und Respekt für ihre Befehle verlangen!',
 		sub: 'EXTREME STRAP-ONS, BRUTAL FISTING, HARDCORE HUMILIATION & TOTAL DOMINATION',
-		bg: './img/rivera_info.jpg'
+		bg: './rivera_info.jpg'
 	}
 	export let setPage
 	let dialog
